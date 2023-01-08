@@ -6,4 +6,15 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    leng = len(s)
+    sum = 0
+    idx = 0
+    while leng != 0:
+        if s[idx].isalpha():
+            sum += 1
+        idx += 1
+        leng -= 1
+    return sum
+
+
+print(main('s8fg98'))
