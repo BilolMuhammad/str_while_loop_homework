@@ -11,7 +11,7 @@ def main(s):
     idx = 0
     sum = 0
     while leng != 0:
-        if s[idx] != 'a' and s[idx] != 'e' and s[idx] != 'o' and s[idx] != 'u' and s[idx] != 'i':
+        if s[idx] != 'a' and s[idx] != 'e' and s[idx] != 'i' and s[idx] != 'o' and s[idx] != 'u':
             sum += 1
 
         idx += 1
