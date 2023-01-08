@@ -6,4 +6,15 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    leng = len(s)
+    sum = 0
+    idx = 0
+    while leng != 0:
+        if int(s[idx]) % 2 != 0:
+            sum += int(s[idx])
+        leng -= 1
+        idx += 1
+    return sum
+
+
+print(main('123451'))
