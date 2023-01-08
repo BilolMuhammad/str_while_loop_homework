@@ -19,4 +19,4 @@ def main(s):
     return sum
 
 
-print(main('asdeifgh'))
+print(main('biloliddin'))
