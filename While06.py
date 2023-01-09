@@ -7,16 +7,14 @@ def main(s):
     Returns:
         int: return answer
     """
-    leng = len(s)
-    idx = 0
+    vowels = 'aeiou'
     sum = 0
-    while leng != 0:
-        if s[idx] == 'a' or s[idx] == 'e' or s[idx] == 'i' or s[idx] == 'o' or s[idx] == 'u':
-            sum += 1
-
-        idx += 1
-        leng -= 1
-    return sum
+    i, c = 0, 0
+    while i < len(s):
+        if not s[i] in vowels and s[i].isalpha():
+            c += 1
+        i += 1
+    return c
 
 
 print(main('bilol'))
